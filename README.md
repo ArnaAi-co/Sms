@@ -37,3 +37,9 @@ This project is a web application built with PHP, utilizing a Laravel framework.
 - Regular maintenance of the scheduled command is recommended to ensure timely alerts.
 
 For further details, refer to the Laravel documentation or contact the project maintainer.
+
+
+- 👤 Author
+- Amir Shahamiri
+- 🧑‍💻 GitHub: github.com/amirshahamiri
+- 💼 LinkedIn: linkedin.com/in/amirshahamiri
