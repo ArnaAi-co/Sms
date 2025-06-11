@@ -14,7 +14,7 @@ class Ippanel
         $from = env('IPPANEL_ORIGINATOR_PATTERN');
 
 
-        $url = "https://ippanel.com/patterns/pattern?username=" . $username . "&password=" . urlencode($password) . "&from=$from&to=" . json_encode($to) . "&input_data=" . urlencode(json_encode($input_data)) . "&pattern_code=$pattern_code";
+        $url = "https://example.com/patterns/pattern?username=" . $username . "&password=" . urlencode($password) . "&from=$from&to=" . json_encode($to) . "&input_data=" . urlencode(json_encode($input_data)) . "&pattern_code=$pattern_code";
         $handler = curl_init($url);
         curl_setopt($handler, CURLOPT_CUSTOMREQUEST, "POST");
         curl_setopt($handler, CURLOPT_POSTFIELDS, $input_data);
@@ -28,7 +28,7 @@ class Ippanel
     {
         $apiKey = env('IPPANEL_APIKEY');
         $sender = env('IPPANEL_ORIGINATOR');
-        $url = 'https://api2.ippanel.com/api/v1/sms/send/webservice/single';
+        $url = 'https://example.com/api/v1/sms/send/webservice/single';
 
         if ($time === null) {
             $time = date('c'); // ISO8601 format like: 2025-03-21T09:12:50.824Z
